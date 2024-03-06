@@ -108,4 +108,11 @@ export const registerHandlebarHelpers = (root: {
     Handlebars.registerHelper('camelCase', function (value: string): string {
         return camelCase(value);
     });
+
+    Handlebars.registerHelper('escapeDefault', function (value: any): any {
+        if (typeof value === 'string') {
+            return `'${value}'`;
+        }
+        return value;
+    });
 };

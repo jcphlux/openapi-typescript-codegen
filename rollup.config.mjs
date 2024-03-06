@@ -38,6 +38,7 @@ const handlebarsPlugin = () => ({
                     enumerator: true,
                     escapeComment: true,
                     escapeDescription: true,
+                    escapeDefault: true,
                     escapeTitle: true,
                     camelCase: true,
                 },
