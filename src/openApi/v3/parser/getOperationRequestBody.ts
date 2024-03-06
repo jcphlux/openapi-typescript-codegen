@@ -73,6 +73,7 @@ export const getOperationRequestBody = (openApi: OpenApi, body: OpenApiRequestBo
                 requestBody.uniqueItems = model.uniqueItems;
                 requestBody.maxProperties = model.maxProperties;
                 requestBody.minProperties = model.minProperties;
+                requestBody.default = model.default;
                 requestBody.pattern = getPattern(model.pattern);
                 requestBody.imports.push(...model.imports);
                 requestBody.enum.push(...model.enum);

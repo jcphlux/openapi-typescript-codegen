@@ -55,6 +55,7 @@ export const getModelProperties = (
                 uniqueItems: property.uniqueItems,
                 maxProperties: property.maxProperties,
                 minProperties: property.minProperties,
+                default: property.default,
                 pattern: getPattern(property.pattern),
             };
             if (parent && discriminator?.propertyName == propertyName) {

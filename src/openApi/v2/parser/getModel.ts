@@ -40,6 +40,7 @@ export const getModel = (
         uniqueItems: definition.uniqueItems,
         maxProperties: definition.maxProperties,
         minProperties: definition.minProperties,
+        default: definition.default,
         pattern: getPattern(definition.pattern),
         imports: [],
         enum: [],

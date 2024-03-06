@@ -80,8 +80,8 @@ export const getOperationParameter = (openApi: OpenApi, parameter: OpenApiParame
             operationParameter.uniqueItems = model.uniqueItems;
             operationParameter.maxProperties = model.maxProperties;
             operationParameter.minProperties = model.minProperties;
-            operationParameter.pattern = getPattern(model.pattern);
             operationParameter.default = model.default;
+            operationParameter.pattern = getPattern(model.pattern);
             operationParameter.imports.push(...model.imports);
             operationParameter.enum.push(...model.enum);
             operationParameter.enums.push(...model.enums);

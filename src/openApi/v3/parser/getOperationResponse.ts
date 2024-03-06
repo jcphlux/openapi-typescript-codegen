@@ -71,6 +71,7 @@ export const getOperationResponse = (
                 operationResponse.uniqueItems = model.uniqueItems;
                 operationResponse.maxProperties = model.maxProperties;
                 operationResponse.minProperties = model.minProperties;
+                operationResponse.default = model.default;
                 operationResponse.pattern = getPattern(model.pattern);
                 operationResponse.imports.push(...model.imports);
                 operationResponse.enum.push(...model.enum);

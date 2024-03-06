@@ -38,6 +38,7 @@ export const getOperationParameter = (openApi: OpenApi, parameter: OpenApiParame
         maxItems: parameter.maxItems,
         minItems: parameter.minItems,
         uniqueItems: parameter.uniqueItems,
+        default: parameter.default,
         pattern: getPattern(parameter.pattern),
         imports: [],
         enum: [],

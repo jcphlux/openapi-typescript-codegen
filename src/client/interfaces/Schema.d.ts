@@ -22,6 +22,7 @@ export interface Schema {
     multipleOf?: number;
     maxLength?: number;
     minLength?: number;
+    default?: any;
     pattern?: string;
     maxItems?: number;
     minItems?: number;
