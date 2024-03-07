@@ -110,9 +110,6 @@ export const registerHandlebarHelpers = (root: {
     });
 
     Handlebars.registerHelper('escapeDefault', function (value: any): any {
-        if (typeof value === 'string') {
-            return `'${value}'`;
-        }
-        return value;
+        return typeof value === 'string' ? `'${value}'` : value;
     });
 };
